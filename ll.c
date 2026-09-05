@@ -1,13 +1,25 @@
 #include <stdio.h>
 
-typedef struct
+struct node
 {
     int data;
     int* next;
 
-}node;
+};
+struct node *head = NULL;
+struct ll{
+   
+};
 
+template <tempnam> void add(int add){
+  struct node n;
+  if (head == NULL){
+    head = &n;
+    return;
+  }
+  
 
+}
 int main(){
     
     return 0;
