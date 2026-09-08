@@ -166,6 +166,7 @@ char const *cmdass[] = {
   "echo",
   "exit",
   "BladeRiver",
+  "complete",
   NULL
 };
 static int completing_first_word = 0;
@@ -478,7 +479,7 @@ int main(int argc, char *argv[]) {
       }
     }
     else if (strcmp(args[0],"type") == 0){
-      if (strcmp(args[1],"exit") == 0 ||  strcmp(args[1],"echo") == 0 || strcmp(args[1],"type") == 0 || strcmp(args[1],"pwd") == 0 || strcmp(args[1],"cd") == 0){
+      if (strcmp(args[1],"exit") == 0 ||  strcmp(args[1],"echo") == 0 || strcmp(args[1],"type") == 0 || strcmp(args[1],"pwd") == 0 || strcmp(args[1],"cd") == 0 || strcmp(args[1],"complete")){
         printf("%s is a shell builtin\n",command + 5);
       }
       else{
