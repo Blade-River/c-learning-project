@@ -431,7 +431,7 @@ int main()
     init_chip8(&chip8);
 
   
-    rom_loader(&chip8, "Airplane.ch8");
+    rom_loader(&chip8, "Tetris [Fran Dachille, 1991].ch8");
 
     InitWindow(640, 320, "CHIP-8");
     SetTargetFPS(60);
